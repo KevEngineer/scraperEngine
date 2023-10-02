@@ -32,15 +32,37 @@ module.exports = {
         return new Promise((resolve, reject) => {
             //check if proxy exists first
             console.log("fetching proxies")
-            knex('proxies').limit(4).then((response) => {
+            knex('proxies').limit(100).orderBy('proxyId', 'desc').then((response) => {
 
-                resolve (response)
-            }).catch((error)=>{
+                resolve(response)
+            }).catch((error) => {
                 reject(error)
             })
 
         })
 
+
+    },
+    insertNewsItem: function (newsTitle, newsDescription, newsLink, newsAuthor,newsTime) {
+        return new Promise((resolve, reject) => {
+            knex.select().from('news').where({ newsLink }).then((results) => {
+                if (results.length == 0) {
+                    knex.insert({ newsTitle,newsDescription, newsLink,newsAuthor,newsTime}).into('news').then((response) => {
+                        console.log("inserted item")
+                        resolve()
+                    }).catch((error) => {
+                        reject(error)
+                    })
+                }
+                else{
+                    console.log("item exists!")
+                    resolve()}
+
+            }).catch((error) => {
+                resolve(error)
+            })
+
+        })
 
     }
 }
