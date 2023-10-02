@@ -1,0 +1,696 @@
+[
+    {
+        "media": "standard kenya",
+        "link": "https://www.standardmedia.co.ke/",
+        "description": "homepage",
+        "category": "homepage",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".mb-4 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mb-2 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 10 
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mt-2 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 10 
+            }
+        ]
+    },
+    {
+        "media": "standard kenya",
+        "link": "https://www.standardmedia.co.ke/category/1/counties",
+        "description": "counties",
+        "category": "counties",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".card-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mt-2 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mb-3 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            }
+        ]
+    },
+    {
+        "media": "standard kenya",
+        "link": "https://www.standardmedia.co.ke/category/3/politics",
+        "description": "counties",
+        "category": "politics",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".card-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mt-2 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mb-3 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            }
+        ]
+    },
+    {
+        "media": "standard kenya",
+        "link": "https://www.standardmedia.co.ke/business",
+        "description": "business",
+        "category": "business",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".boda-bottom > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 11
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".card.border-0 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            }
+        ]
+    },
+    {
+        "media": "standard kenya",
+        "link": "https://www.standardmedia.co.ke/category/5/world",
+        "description": "world",
+        "category": "world",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".card-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mt-2 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 2
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mb-3 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            }
+        ]
+    },
+    {
+        "media": "standard kenya",
+        "link": "https://www.standardmedia.co.ke/health/",
+        "description": "health",
+        "category": "health",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".mb-3 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".mb-2 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            }
+        ]
+    },
+    {
+        "media": "standard kenya",
+        "link": "https://www.standardmedia.co.ke/sports",
+        "description": "sports",
+        "category": "sports",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".boda-bottom > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 5
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".card.border-0 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            }
+        ]
+    },
+    {
+        "media": "standard kenya",
+        "link": "https://www.standardmedia.co.ke/entertainment",
+        "description": "entertainment",
+        "category": "entertainment",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".text-white > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            }
+        ]
+    },
+    {
+        "media": "standard kenya",
+        "link": "https://www.standardmedia.co.ke/category/63/environment",
+        "description": "environment",
+        "category": "environment",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".card-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mt-2 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mb-3 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            }
+        ]
+    },
+    {
+        "media": "standard kenya",
+        "link": "https://www.standardmedia.co.ke/category/480/fact-check",
+        "description": "Fact Check",
+        "category": "Fact Check",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".card-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mt-2 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 2
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".sub-title.mb-3 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            }
+        ]
+    },
+    {
+        "media": "Nation Africa",
+        "link": "https://nation.africa/kenya",
+        "description": "home",
+        "category": "home",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".col-1-1.headline-teasers_item > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 6
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".article-collection > li > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 9
+            }
+        ]
+    },
+    {
+        "media": "Nation Africa",
+        "link": "https://nation.africa/kenya/counties",
+        "description": "counties",
+        "category": "counties",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".col-1-1.medium-col-2-3 > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".article-collection > li > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 3
+            }
+        ]
+    },
+    {
+        "media": "Nation Africa",
+        "link": "https://nation.africa/kenya/business",
+        "description": "business",
+        "category": "business",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".col-1-1.medium-col-2-3 > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".article-collection > li > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 4
+            }
+        ]
+    },
+    {
+        "media": "Nation Africa",
+        "link": "https://nation.africa/kenya/blogs-opinion",
+        "description": "Opinions-Blogs",
+        "category": "Opinions-Blogs",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".col-1-1.large-col-1-3 > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 10
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".article-collection > li > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 20
+            }
+        ]
+    },
+    {
+        "media": "Nation Africa",
+        "link": "https://nation.africa/kenya/sports",
+        "description": "Sports",
+        "category": "Sports",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".col-1-1.headline-teasers_item > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".article-collection > li > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 6
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".col-1-1.large-col-1-3 > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 6
+            }
+        ]
+    },
+    {
+        "media": "Nation Africa",
+        "link": "https://nation.africa/kenya/life-and-style",
+        "description": "Sports",
+        "category": "Sports",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".col-1-1.medium-col-2-3 > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".article-collection > li > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 10
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".col-1-1.large-col-1-3 > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 10
+            }
+        ]
+    },
+    {
+        "media": "Nation Africa",
+        "link": "https://nation.africa/kenya/health",
+        "description": "Health",
+        "category": "Health",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".col-1-1.headline-teasers_item > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".article-collection > li > a",
+                "scrapeType": "attr",
+                "numberPfPosts": 8
+            }
+        ]
+    },
+    {
+        "media": "The Star Kenya",
+        "link": "https://www.the-star.co.ke/",
+        "description": "Home",
+        "category": "Home",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 20
+            }
+            
+        ]
+    },
+    {
+        "media": "The Star Kenya",
+        "link": "https://www.the-star.co.ke/news/",
+        "description": "News",
+        "category": "News",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 20
+            }
+        ]
+    },
+    {
+        "media": "The Star Kenya",
+        "link": "https://www.the-star.co.ke/opinion/",
+        "description": "Opinion",
+        "category": "Opinion",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 5
+            }
+        ]
+    },
+    {
+        "media": "The Star Kenya",
+        "link": "https://www.the-star.co.ke/sports/",
+        "description": "Sports",
+        "category": "Sports",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 10
+            }
+        ]
+    },
+    {
+        "media": "The Star Kenya",
+        "link": "https://www.the-star.co.ke/business/",
+        "description": "Business",
+        "category": "Business",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 10
+            }
+        ]
+    },
+    {
+        "media": "The Star Kenya",
+        "link": "https://www.the-star.co.ke/counties/",
+        "description": "Counties",
+        "category": "Counties",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 10
+            }
+        ]
+    },
+    {
+        "media": "The Star Kenya",
+        "link": "https://www.the-star.co.ke/siasa/",
+        "description": "Siasa",
+        "category": "Counties",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 5
+            }
+        ]
+    },
+    {
+        "media": "The Star Kenya",
+        "link": "https://www.the-star.co.ke/sasa/",
+        "description": "Sasa",
+        "category": "Counties",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 10
+            }
+        ]
+    },
+    {
+        "media": "The Star Kenya",
+        "link": "https://www.the-star.co.ke/health/",
+        "description": "health",
+        "category": "health",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 7
+            }
+        ]
+    },
+    {
+        "media": "The Star Kenya",
+        "link": "https://www.the-star.co.ke/women-work/",
+        "description": "Women Work",
+        "category": "Women Work",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 2
+            }
+        ]
+    },
+    {
+        "media": "Citizen Digital",
+        "link": "https://www.the-star.co.ke/sasa/",
+        "description": "Sasa",
+        "category": "Counties",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".article-body > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 10
+            }
+        ]
+    },
+    {
+        "media": "Citizen Digital",
+        "link": "https://citizen.digital/",
+        "description": "Home",
+        "category": "Home",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".topstory-excerpt > h1 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 4
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".next-topstory > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            }
+        ]
+    },
+    {
+        "media": "Citizen Digital",
+        "link": "https://citizen.digital/news",
+        "description": "News",
+        "category": "News",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".topstory-excerpt > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".catstory > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".catstory-sidebar > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 2
+            }
+
+        ]
+    },
+    {
+        "media": "Citizen Digital",
+        "link": "https://citizen.digital/wananchi-reporting",
+        "description": "Wananchi Reporting",
+        "category": "Wananchi Reporting",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".topstory-excerpt > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".catstory > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".catstory-sidebar > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            }
+        ]
+    },
+    {
+        "media": "Citizen Digital",
+        "link": "https://citizen.digital/business",
+        "description": "Business",
+        "category": "Business",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".topstory-excerpt > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".catstory > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".catstory-sidebar > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 2
+            }
+        ]
+    },
+    {
+        "media": "Citizen Digital",
+        "link": "https://citizen.digital/sports",
+        "description": "Sports",
+        "category": "Sports",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".topstory-excerpt > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".catstory > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".catstory-sidebar > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 2
+            }
+        ]
+    },
+    {
+        "media": "Citizen Digital",
+        "link": "https://citizen.digital/entertainment",
+        "description": "Entertainment",
+        "category": "Entertainment",
+        "scrapeTask": [
+            {
+                "index": 0,
+                "scrapeTag": ".mb-4 > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".topstory-excerpt > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 1
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".catstory > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 3
+            },
+            {
+                "index": 0,
+                "scrapeTag": ".catstory-sidebar > a",
+                "scrapeType": "normal",
+                "numberPfPosts": 2
+            }
+        ]
+    }
+]

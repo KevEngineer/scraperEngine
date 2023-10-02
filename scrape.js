@@ -1,6 +1,9 @@
 //const proxylist = require('./proxies')
 const cheerio = require("cheerio");
 var axios = require('axios');
+const fs = require('fs');
+const path = require('path');
+var database = require('./knexdb.js');
 
 (async () => {
     // let proxydata = await proxylist.getProxies()
@@ -9,39 +12,40 @@ var axios = require('axios');
     // let proxyLink = proxydata[randomProxyNumber].ipAddress + ':' + proxydata[randomProxyNumber].port
     // console.log(proxyLink)
     // 80.240.202.218:8080
-    let pageData = await scrapeWebsite('https://www.standardmedia.co.ke/', '80.240.202.218:8080')
+    let data = fs.readFileSync(path.resolve(__dirname, 'newssources.json'));
+    let sources = JSON.parse(data);
+    console.log(sources.length)
+    for (var index in sources) {
+        if (index == 4) {
+            break;
+        }
+        //let's generate a random proxy
+        let proxydata = await database.fetchProxy()
+        console.log(proxydata)
+        let randomProxyNumber = Math.floor(Math.random() * (proxydata.length - 1))
+        let proxyLink = proxydata[randomProxyNumber].proxyValue
+        console.log("proxy found",proxyLink)
+        console.log(sources[index].link)
+        
+        let pageData = await scrapeWebsite(sources[index].link,proxyLink)
+        let scrapeTasks = sources[index].scrapeTask
+        for (var i in scrapeTasks) {
+            console.log("Looping data")
+            console.log(scrapeTasks[i])
+            let $ = cheerio.load(pageData.data);
+            let listItems = $(scrapeTasks[i].scrapeTag)
+            // /.sub-title.mb-2 > a
+            listItems.each((index, item) => {
+                console.log("index", index + 1, $(item).text(), '....', $(item).attr().href);
+                if (index == (scrapeTasks[i].numberPfPosts) - 1) {
+                    return false;
+                }
+            })
+        }
+        //load html page with cheerio
 
-    //load html page with cheerio
-    let $ = cheerio.load(pageData.data);
-    let listItems=$('.mb-4 > a')
-    listItems.each((index, item) => {
-        console.log($(item).text(),'....',$(item).attr().href);
-    })
-    
-    //console.log($('body > div > div > div > main > div > div > div > div > div > div > div > a').text())
-    // const listItems = $('.next-topstory-tags').find('a')
-    // listItems.each((index,item)=>{
-    //     console.log($(item).text());
-    // })
-    // console.log(listItems.length)
-    ////html[1]/body[1]/div[1]/div[2]/div[1]/main[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/h1[1]/a[1]
-    //html/body/div/div/div/main/div/div/div/div/div/div/div/a
-    ///html/body/div/div/div/main/div/div/div/div/div/div/div/a
-    // console.log($('body > div:eq(1) > div:eq(1) > section:eq(0) > div:eq(0) > div:eq(0) > div:eq(1) > div > div:eq(0) > div > div > div:eq(1) > div:eq(1) > a').text())
-    ////html/body/div[2]/div[2]/section[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div[1]/a
-    ////html/body/div[2]/div[2]/section[1]/div[1]/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/a
-    ////html/body/div[2]/div[2]/section[1]/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div[1]/a
-    ////html/body/div[2]/div[2]/section[1]/div[1]/div[1]/div[3]/div[1]/div/div/div/div[1]/a
-    //html/body/section/section[1]/div/section[2]/ol/li[1]/a
-    ////html/body/section/section[1]/div/section[1]/a
-    // console.log($('body > section > section:eq(0) > ul > li:eq(0) > section > section:eq(0) > div > ol > li:eq(0) > a').attr());
-    //html/body/section/section[1]/ul/li[1]/section/section[1]/div/ol/li[1]/a
-    // console.log($('body > section:eq(0) > div > div > div:eq(0) > div:eq(0) > div:eq(1) > small > a').attr());
-    // > section > section[1] > ul > li[1] > section > section[1] > div > ol > li[1] > a
-    // section[1]/div/div/div[1]/div[1]/div[2]/small/a
-    // let titleTeaser=$('body')
-    //html/body/section/section[1]/ul/li[1]/section/section[1]/div/ol/li/a
-    // console.log(titleTeaser.html())
+    }
+
 
 
 })()
